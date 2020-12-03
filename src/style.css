@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+*::after {
+  box-sizing: border-box;
+}
+
+*::before {
+  box-sizing: border-box;
+}
+
+@media (max-width: 500px) {
+  #html {
+    height: 50vh;
+    overflow: auto;
+  }
+
+  #divWrapper {
+    height: 50vh;
+    position: relative;
+  }
+
+  #div {
+    position: absolute !important;
+    left:50%!important;
+    transform: translateX(-50%);
+    width: 40vh !important;
+    height: 40vh !important;
+  }
+  #div::before,#div::after{
+      width: 20vh!important;
+      height: 20vh!important;
+  }
+}
